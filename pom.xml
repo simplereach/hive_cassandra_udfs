@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.simplereach</groupId>
+    <artifactId>hive_cassandra_udfs</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <repositories>
+        <repository>
+            <id>DN_M2_Repo</id>
+            <url>http://www.datanucleus.org/downloads/maven2/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-core</artifactId>
+          <version>0.20.2</version>
+        </dependency>
+
+        <dependency>
+        	<groupId>org.apache.hive</groupId>
+        	<artifactId>hive-exec</artifactId>
+        	<version>0.8.0</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-test</artifactId>
+          <version>0.20.2</version>
+        </dependency>
+
+        <dependency>
+    	  <groupId>org.apache.cassandra</groupId>
+    	  <artifactId>cassandra-javautils</artifactId>
+    	  <version>0.7.1</version>
+        </dependency>
+
+        <dependency>
+           <groupId>javax.jdo</groupId>
+           <artifactId>jdo2-api</artifactId>
+           <version>2.3-ec</version>
+           <scope>runtime</scope>
+        </dependency>
+
+    </dependencies>
+</project>
